@@ -29,6 +29,11 @@ async function loadChannels() {
                 channelList.appendChild(channelItem);
             });
         }
+
+
+        document.getElementById('loading-spinner').remove();
+        document.getElementById('content').style.display = 'block';
+
     } catch (error) {
         console.error('Error al cargar los canales:', error);
     }

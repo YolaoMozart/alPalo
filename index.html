@@ -8,8 +8,15 @@
   <script src="script.js"></script>
 </head>
 <body class="bg-light">
+  <!-- Spinner -->
+  <div id="loading-spinner" class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
 
-  <div class="container py-5">
+  <!-- Contenedor principal -->
+  <div id="content" class="container py-5" style="display: none;">
     <div class="text-center mb-4">
       <h1 class="display-4 text-primary">Al Palo</h1>
       <p class="lead text-muted">T€bas ladrón</p>
@@ -19,8 +26,11 @@
     </div>
   </div>
 
+  <!-- Scripts de Bootstrap y jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
