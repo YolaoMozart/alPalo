@@ -1,36 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Al Palo</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <script src="script.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Al Palo</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<script src="script.js"></script>
+	<style>
+		.category-header {
+			position: relative;
+			/* Asegura que los elementos internos se posicionen en relación a este contenedor */
+			overflow: hidden;
+			/* Oculta cualquier contenido que sobresalga del contenedor */
+		}
+
+		.category-header::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			/* Posiciona el degradado en la parte inferior */
+			left: 0;
+			right: 0;
+			height: 30px;
+			/* Ajusta la altura del degradado según lo necesites */
+			background: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+			/* Cambia los colores según lo necesites */
+			pointer-events: none;
+			/* Asegura que no interfiera con los clics en el contenido */
+		}
+
+		.link-font {
+			font-size: larger;
+		}
+	</style>
 </head>
+
 <body class="bg-light">
-  <!-- Spinner -->
-  <div id="loading-spinner" class="d-flex justify-content-center align-items-center" style="height: 100vh;">
-    <div class="spinner-border text-primary" role="status">
-      <span class="sr-only">Loading...</span>
-    </div>
-  </div>
+	<!-- Spinner -->
+	<div id="loading-spinner" class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+		<div class="spinner-border text-primary" role="status">
+			<span class="sr-only">Loading...</span>
+		</div>
+	</div>
 
-  <!-- Contenedor principal -->
-  <div id="content" class="container py-5" style="display: none;">
-    <div class="text-center mb-4">
-      <h1 class="display-4 text-primary">Al Palo</h1>
-      <p class="lead text-muted">T€bas ladrón</p>
-    </div>
+	<!-- Contenedor principal -->
+	<div id="content" class="container py-5" style="display: none;">
+		<div class="text-center mb-4">
+			<h1 class="display-4 text-primary">Al Palo</h1>
+			<p class="lead text-muted">T€bas ladrón</p>
+		</div>
 
-    <div id="channel-list" class="list-group">
-    </div>
-  </div>
+		<div id="channel-list" class="list-group">
+		</div>
+	</div>
 
-  <!-- Scripts de Bootstrap y jQuery -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="script.js"></script>
+	<!-- Scripts de Bootstrap y jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
 </body>
 
 </html>
