@@ -1,0 +1,30 @@
+[
+  {
+    "name": "LaLigaTV BAR",
+    "link": "acestream://aa82e7d4f03061f2144a2f4be22f2e2210d42280"
+  },
+  {
+    "name": "M. LaLiga - 1080p MultiAudio (Opción 1)",
+    "link": "acestream://7d8c87e057be98f00f22e23b23fbf08999e4b02f"
+  },
+  {
+    "name": "M. LaLiga - 1080p MultiAudio (Opción 2)",
+    "link": "acestream://8e7d7d9cb9b87f68baf2306587e6e5d987f34502"
+  },
+  {
+    "name": "M. LaLiga - 720p",
+    "link": "acestream://6f3f6a6543be7d9e98b234fa76e5d3a876b3405d"
+  },
+  {
+    "name": "M. Deportes - 1080p",
+    "link": "acestream://ab1243c8be56d7898ff345cb876d76c298e6a7c8"
+  },
+  {
+    "name": "M. Fútbol",
+    "link": "acestream://34c9f23a78c9d6b2d4328ac67e9b8a4e8b23f78a"
+  },
+  {
+    "name": "Champions",
+    "link": "acestream://931b1984badcb821df7b47a66ac0835ac871b51c"
+  }
+]
